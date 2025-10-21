@@ -35,5 +35,6 @@ public class Main {
         System.out.println(result); // 20
         result = Math.min(10, 20);
         System.out.println(result); // 10
+
     }
 }
