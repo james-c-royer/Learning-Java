@@ -52,7 +52,7 @@ public class Main {
                 System.out.println("It is not a day");
         }
 
-        // best approach: co,bining multiple cases with the same results
+        // best approach: combining multiple cases with the same results
         switch (day2) {
             case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ->
                 System.out.println("It is a weekday");
