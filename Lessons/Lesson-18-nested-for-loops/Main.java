@@ -6,19 +6,23 @@ public class Main {
         // I did definitely have to look up the syntax for arrays in Java since I haven't gotten that far... 
         int[] nums = {1, 5, 3, 10};
         int target = 13;
+        boolean answerFound = false;
 
         // .length returns the 
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target) {
                     System.out.printf("[%d, %d]", i, j);
+                    answerFound = true;
                     break;
                 }
             }
-            if (i == nums.length - 2) {
-                System.out.println("No solution");
+            if (answerFound) {
+                break;
             }
         }
-
+            if(!answerFound){
+                System.out.println("No solution");
+            }
     }
 }
