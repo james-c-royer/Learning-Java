@@ -6,7 +6,7 @@ public class Main {
         Book book2 = new Book("Lord of the Rings", 1178);
         Book[] books = {book1, book2};
 
-        Library library = new Library("Local Library", books);
+        Library library = new Library("Your local library", books);
 
         System.out.println(library.getName() + " has the following books:");
         
